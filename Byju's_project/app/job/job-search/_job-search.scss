@@ -1,0 +1,29 @@
+
+.welcomeNote{
+    text-align: center;
+}
+.searchArea{
+    max-width: 90%;
+    margin: 10px auto auto auto;
+    border: 3px solid #000000;
+    .tblProp{
+        width:100%;
+    }
+    .dropdown::before{
+        content: 'Experience';
+        padding:20px;
+    }
+    .locInput::before{
+        content: 'Location';
+        padding:20px
+    }
+    .btnClass{
+        padding: 20px;
+    }
+    #srchCaption{
+        padding: 5px;
+        border-bottom: 1px solid black;
+        background-color: lightgrey;
+        text-align: center;
+    }
+}

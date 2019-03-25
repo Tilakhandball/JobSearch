@@ -1,0 +1,13 @@
+.detailContainer{
+    height: 100%;
+    .listStyle{
+        list-style-type:none;
+        border: 2px solid #000000;
+        max-width: 30%;
+        margin: 150px auto auto auto;
+        button, li{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}

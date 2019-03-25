@@ -1,0 +1,17 @@
+<div class="card col-sm-4" ng-repeat="x in jobResult.jobs | filter:jobResult.searchText" ng-click="jobResult.showDetails(x)">
+    <div class="container" data-toggle="tooltip" data-placement="top" title="Click Me! to view details">
+        <ul class="listStyle">
+            <li ng-if="x.title">{{jobResult.title}}: {{x.title}}</li>
+            <li ng-if="x.companyname">{{jobResult.company}}: {{x.companyname}}</li>
+            <li ng-if="x.location">{{jobResult.locName}}: {{x.location}}</li>
+            <li ng-if="x.skills">{{jobResult.skill}}: {{x.skills}}</li>
+            <li ng-if="x.experience">{{jobResult.experience}}: {{x.experience}}</li>
+            <li ng-if="x.salary">{{jobResult.salary}}: {{x.salary}}</li>
+            <li ng-if="x.type">{{jobResult.type}}: {{x.type}}</li>
+            <li ng-if="x.startdate">{{jobResult.sDate}}: {{x.startdate}}</li>
+            <li ng-if="x.enddate">{{jobResult.eDate}}: {{x.enddate}}</li>
+            <li ng-if="x.applyink">{{jobResult.link}}: {{x.applyink}}</li>
+            <li ng-if="x.source">{{jobResult.src}}: {{x.source}}</li>
+        </ul>
+    </div>
+</div>

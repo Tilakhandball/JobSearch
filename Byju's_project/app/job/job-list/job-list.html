@@ -1,0 +1,24 @@
+<div class="jobList">
+        <div class="topcategory">
+            <table>
+                <caption id="listCaption">{{jobList.caption}}</caption>
+                <tr>
+                    <td>
+                        <form class="searchBox">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <input type="text" placeholder="Keywords/skills" ng-model="jobList.searchText" name="search" autocomplete="off">
+                        </form>
+                    </td>
+                    <td>{{jobList.jobTotal}}: {{jobList.totalJobs}}</td>
+                    <td>{{jobList.Matches}}: {{(jobList.jobs | filter:jobList.searchText).length}}</td>
+                    <td class="sorts">
+                        <button type="submit" class="btn btn-primary" ng-click="jobList.jobSort(jobList.jobs,'location')">{{jobList.locSort}}</button>
+                        <button type="submit" class="btn btn-primary" ng-click="jobList.jobSort(jobList.jobs,'experience')">{{jobList.expSort}}</button>
+                    </td>
+                </tr>
+        </div>
+        <job-result></job-result>
+        </table>
+    </div>
+    
+    

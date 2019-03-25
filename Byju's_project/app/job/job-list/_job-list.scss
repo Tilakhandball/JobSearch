@@ -1,0 +1,64 @@
+.jobList{
+    max-width: 90%;
+    margin: auto;
+    border: 3px solid #000000;
+    margin-top: 10px;
+    height: 460px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .topcategory{
+        position: relative;
+        table caption#listCaption{
+        padding: 5px;
+        border-bottom: 1px solid black;
+        background-color: lightgrey;
+        text-align: center;
+        }
+        table tr td{
+            padding: 20px;
+            //width: 25%;
+            form.searchBox{
+                position: relative;
+                input[type=text] {
+                    font-size: 17px;
+                    border: 1px solid grey;
+                    float: left;
+                    width: 100%;
+                    background: #f1f1f1;
+                    padding-left:25px;
+                    border-radius: 15px;
+                }
+                input[type=text]:focus{
+                    outline:none;
+                }
+                span.glyphicon{
+                    position: absolute;
+                    top: 6px;
+                    left: 9px;
+                } 
+            }
+            &.sorts{
+                right: 0;
+                position: absolute;
+                padding-right: 60px;
+            }
+        }
+        table{
+            width: 100%;
+            table-layout: fixed;
+            tr.jobContainer{
+                display: block;
+                td{
+                    max-width: 20%;
+                    margin: auto;
+                    border: 1px solid #000000;
+                    margin-top: 10px;
+                    height: 50px;
+                    display: inline-block
+                }
+            } 
+        }
+    }
+}
+
+

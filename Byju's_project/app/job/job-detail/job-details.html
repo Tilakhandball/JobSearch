@@ -1,0 +1,21 @@
+<div class="detailContainer">
+    <ul class="listStyle">
+        <li ng-if="jobDetail.data.title">{{jobDetail.title}}: {{jobDetail.data.title}}</li>
+        <li ng-if="jobDetail.data.companyname">{{jobDetail.company}}: {{jobDetail.data.companyname}}</li>
+        <li ng-if="jobDetail.data.location">{{jobDetail.locName}}: {{jobDetail.data.location}}</li>
+        <li ng-if="jobDetail.data.skills">{{jobDetail.skill}}: {{jobDetail.data.skills}}</li>
+        <li ng-if="jobDetail.data.experience">{{jobDetail.experience}}: {{jobDetail.data.experience}}</li>
+        <li ng-if="jobDetail.data.salary">{{jobDetail.salary}}: {{jobDetail.data.salary}}</li>
+        <li ng-if="jobDetail.data.type">{{jobDetail.type}}: {{jobDetail.data.type}}</li>
+       <li ng-if="jobDetail.data.startdate">{{jobDetail.sDate}}: {{jobDetail.data.startdate}}</li> 
+       <li ng-if="jobDetail.data.enddate">{{jobDetail.eDate}}: {{jobDetail.data.enddate}}</li>
+       <li ng-if="jobDetail.data.applyink">{{jobDetail.link}}: {{jobDetail.data.applyink}}</li>
+       <li ng-if="jobDetail.data.source">{{jobDetail.src}}: {{jobDetail.data.source}}</li>
+       <br/>
+       <button class="btn btn-primary" type="submit" ng-click="jobDetail.goBack()">{{jobDetail.btnTxt}}</button>
+    </ul>
+    
+</div>
+<div>
+    
+</div>

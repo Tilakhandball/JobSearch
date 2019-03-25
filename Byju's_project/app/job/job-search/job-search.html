@@ -1,0 +1,21 @@
+<div class="welcomeNote">{{jobSearch.welcomeNote}}</div>
+<div class="searchArea">
+    <table class="tblProp">
+        <caption id="srchCaption">{{jobSearch.caption}}</caption>
+        <tr>
+            <td class="dropdown">
+                <select>
+                    <option value="Fresher">{{jobSearch.fresher}}</option>
+                    <option value="Experienced">{{jobSearch.experience}}</option>
+                </select>
+            </td>
+            <td class="locInput">
+                <input type="text" id="location" />
+            </td>
+            <td class="btnClass">
+                <button type="submit" id="search" class="btn btn-primary" ng-click="jobSearch.searchJob()">{{jobSearch.btnText}}</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<job-list ng-if="jobSearch.newDiv"></job-list>

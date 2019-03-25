@@ -1,0 +1,24 @@
+.card {
+    box-shadow: 8px 4px 8px 4px rgba(89, 231, 96, 0.2);
+    border: 1px solid black;
+    transition: 0.3s;
+    width: 30%;
+    height: 35%;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-left:5px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .container {
+        padding: 2px 16px 2px 0px;
+        .listStyle{
+            list-style-type:none;
+            padding-left: 0px !important;
+            li{
+                word-break: break-all;
+            }
+        }
+    }
+  }

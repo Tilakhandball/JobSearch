@@ -1,7 +1,7 @@
 # JobSearch
 Searching for a list of jobs
 
-**Assumption and Process made during project creation:
+**Assumption and Process made during project creation:**
 
 1)The api provided in the test link was consumed as GET method to show the list of available jobs.
 
@@ -21,13 +21,13 @@ Searching for a list of jobs
 
 9)A simple jasmine test case is available in the spec folder inorder to unit test the consumed end point.
 
-**Note: 
+**Note:** 
 
 1)Faced 404 issue during POST call, hence all the available jobs are listed during Search button click event and JSON values under data of the response alone are changed for data display purpose only.
 
 2)Please let me know if any updates needs to be done or reach out to me if you have any queries(tilakhandball@gmail.com).
 
-**Major Technical Stack:
+**Major Technical Stack:**
 
 #Angular 1.6
 #ES6
@@ -37,7 +37,7 @@ Searching for a list of jobs
 #BootStrap
 #Jasmine
 
-**Basic Instructions:
+**Basic Instructions:**
 
 Make sure you have Node version >= 6.0 and NPM >= 3
 
